@@ -1,0 +1,63 @@
+﻿body 
+{
+	width: 90%;
+}
+.gg
+        { text-decoration :none; 
+         color:Black ;}
+li.gg
+{text-decoration :none; 
+         color:Black ;
+	list-style :none;}
+a
+{
+	
+	  color:Black ;
+	font-family :Arial ;
+	font-size :16px;
+	text-decoration :none;
+	
+	}
+
+.HeaderA
+{
+
+}
+
+.Footer
+{
+	padding-right: 90px;
+	font-size: small;
+}
+
+li.FooterLinks
+{
+	
+	display: inline;
+	list-style: none;
+}
+li{	list-style: none;}
+li.HeaderLinks
+{padding-left:10px;
+ padding-right:5px;
+	display: inline;
+	list-style: none;
+	background-image: url('~\Images\logo.png');
+	font-family :Arial ;
+	color :Maroon ;
+}
+
+li.Top10
+{
+	list-style: none;
+}
+
+a.Top10Title
+{
+	font-size: large;
+}
+a.gg
+{ text-decoration :none; 
+         color:Black ;
+	}
+

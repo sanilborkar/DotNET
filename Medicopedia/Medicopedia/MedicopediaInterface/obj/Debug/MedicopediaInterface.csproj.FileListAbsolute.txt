@@ -1,0 +1,5 @@
+D:\Medicopedia Case Study\MedicopediaInterface\bin\MedicopediaInterface.dll
+D:\Medicopedia Case Study\MedicopediaInterface\bin\MedicopediaInterface.pdb
+D:\Medicopedia Case Study\MedicopediaInterface\obj\Debug\ResolveAssemblyReference.cache
+D:\Medicopedia Case Study\MedicopediaInterface\obj\Debug\MedicopediaInterface.dll
+D:\Medicopedia Case Study\MedicopediaInterface\obj\Debug\MedicopediaInterface.pdb

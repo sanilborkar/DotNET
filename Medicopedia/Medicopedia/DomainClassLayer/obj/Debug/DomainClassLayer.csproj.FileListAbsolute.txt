@@ -1,0 +1,10 @@
+D:\Medicopedia Case Study\Medicopedia\DomainClassLayer\bin\Debug\DomainClassLayer.dll
+D:\Medicopedia Case Study\Medicopedia\DomainClassLayer\bin\Debug\DomainClassLayer.pdb
+D:\Medicopedia Case Study\Medicopedia\DomainClassLayer\obj\Debug\ResolveAssemblyReference.cache
+D:\Medicopedia Case Study\Medicopedia\DomainClassLayer\obj\Debug\DomainClassLayer.dll
+D:\Medicopedia Case Study\Medicopedia\DomainClassLayer\obj\Debug\DomainClassLayer.pdb
+D:\DotNet\Medicopedia Case Study\Medicopedia\DomainClassLayer\bin\Debug\DomainClassLayer.dll
+D:\DotNet\Medicopedia Case Study\Medicopedia\DomainClassLayer\bin\Debug\DomainClassLayer.pdb
+D:\DotNet\Medicopedia Case Study\Medicopedia\DomainClassLayer\obj\Debug\ResolveAssemblyReference.cache
+D:\DotNet\Medicopedia Case Study\Medicopedia\DomainClassLayer\obj\Debug\DomainClassLayer.dll
+D:\DotNet\Medicopedia Case Study\Medicopedia\DomainClassLayer\obj\Debug\DomainClassLayer.pdb

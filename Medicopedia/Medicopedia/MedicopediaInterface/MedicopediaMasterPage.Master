@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MedicopediaMasterPage.master.cs" Inherits="MedicopediaInterface.MedicopediaMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>MEDICOPEDIA: A Complete Medical Reference</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <link rel="Stylesheet" type="text/css" href="~/StyleSheet/MedicopediaStyleSheet.css" />
+    
+    
+    <%--JAVASCRIPT--%>
+    
+    <script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('time').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+</script>
+
+    
+    <%--END OF JAVASCRIPT--%>
+    
+    
+    <style type="text/css">
+        .style1
+        {
+            height: 59px;
+        }
+        .style4
+        {
+            width: 114px;
+            height: 448px;
+        }
+        .style5
+        {
+            width: 366px;
+            height: 448px;
+        }
+        .style6
+        {
+            width: 125px;
+            height: 448px;
+        }
+        .style7
+        {
+            width: 114px;
+            height: 101px;
+        }
+        .style8
+        {
+            width: 366px;
+            height: 101px;
+            
+        }
+        .style9
+        {
+            width: 125px;
+            height: 101px;
+            margin-right: 0;
+        }
+        .style10
+        {
+            height: 22px;
+            background-color: #6e6e6e;
+        }
+    </style>
+</head>
+<body onload="startTime()">
+    <form id="form1" runat="server">
+    <div>
+    
+    <table border="1" width="90%" style="margin-left: 30px">
+    <tr>
+    <td class="style7">
+        <asp:Image ID="Image1" runat="server" Height="89px" 
+            ImageUrl="~/Images/logo.png" Width="118px" />
+        </td>
+    <td class="style8" valign="top">name<br />
+&nbsp;</td>
+    <td class="style9" align="right" valign="top">
+        <%--<div id="time"></div>--%>
+        <asp:Label ID="lblDate" runat="server" Font-Size="11px"></asp:Label>
+
+                    <br />
+        <br />
+        <br />
+        <br />
+            <div id="welcome">
+            Welcome 
+                <asp:Label ID="lblWelcome" runat="server" Text="Label"></asp:Label>
+            </div>
+                    </td>
+    </tr>
+    <tr>
+    <td class="style10" colspan="3">
+        
+        <ul>
+        
+        
+        <li class="HeaderLinks"><a href="">Home</a></li> | 
+        <li class="HeaderLinks"><a href="SubmitMedicalQuery.aspx">Ask Doctor's Advice</a></li> | 
+        <li class="HeaderLinks"><a href="AboutUs.aspx">About Us</a></li> | 
+        <li class="HeaderLinks"><a href="ContactUs.aspx">Contact Us</a></li>
+        </ul>
+        
+        </td>
+    </tr>
+    <tr>
+    <td class="style4" valign="top" style="font-size: small">
+    <ul>
+    <li><a>Home</a></li>
+    <li><a href="SubmitMedicalQuery.aspx">Ask Doctor's Advice</a></li>
+    <%--<li><a href="AboutUs.aspx">About Us</a></li>--%>
+    </ul>
+    
+    </td>
+    
+    <td class="style5" valign="top">
+    
+        <asp:DropDownList ID="ddlSearch" runat="server" AutoPostBack="True">
+        </asp:DropDownList>
+        
+        &nbsp;&nbsp;
+        
+        <asp:DropDownList ID="ddlCategory" runat="server">
+        </asp:DropDownList>
+        
+        &nbsp;&nbsp;
+        
+        <asp:DropDownList ID="ddlType" runat="server">
+        </asp:DropDownList>
+    
+        &nbsp;
+    
+        <asp:TextBox ID="txtSymptoms" runat="server" TextMode="MultiLine" 
+            Visible="False" Width="38px"></asp:TextBox>
+    
+        &nbsp;
+        <asp:Button ID="btnGo" runat="server" Font-Size="XX-Small" Text="Search" 
+            Width="34px" />
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </td>
+    <td class="style6" valign="top">Today&#39;s News</td>
+    </tr>
+    <tr>
+    <td class="style1" colspan="3" align="left">
+    <ul>
+    <li class="FooterLinks"><a>Home | </a></li>
+    <li class="FooterLinks"><a href="SubmitMedicalQuery.aspx">Ask Doctor's Advice</a></li>
+    <%--<li><a href="AboutUs.aspx">About Us</a></li>--%>
+    </ul>
+    <asp:Label runat="server" CssClass="Footer" Text="© Copyright 2010 Medicopedia. All Rights Reserved." ID="lblFooter"></asp:Label>
+    <br />
+    <asp:Label runat="server" CssClass="Footer" Text="Designed and Developed By ABC" ID="Label1"></asp:Label>
+    </td>
+    </tr>
+    </table>
+    
+    </div>
+    </form>
+</body>
+</html>

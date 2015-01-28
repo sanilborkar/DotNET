@@ -1,0 +1,23 @@
+﻿body 
+{
+	width: 90%;
+}
+
+
+.Footer
+{
+	font-size: small;
+}
+
+li.FooterLinks
+{
+	display: inline;
+	list-style: none;
+}
+
+li.HeaderLinks
+{
+	display: inline;
+	list-style: none;
+	
+}

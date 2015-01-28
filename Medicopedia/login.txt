@@ -1,0 +1,12 @@
+int noOfAttempts = int.Parse(Session["MaxAttempts"].ToString());
+
+            if (Session["MaxAttempts"].Equals(Session["Attempts"]))
+            {
+                Response.Redirect("Home.aspx");
+            }
+            else {
+                int attempt = int.Parse(Session["Attempts"].ToString());
+                Session["Attempts"] = ++attempt;
+                Response.Redirect("Login.aspx");
+           
+            }
